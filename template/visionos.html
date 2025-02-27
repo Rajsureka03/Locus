@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3D Model Viewer</title>
+<style>
+  body { margin: 0; }
+  canvas { display: block; } /* Make the canvas fill the entire screen */
+</style>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+<script>
+  // Scene, Camera, Renderer
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  document.body.appendChild( renderer.domElement );
+
+  // Load 3D Model (replace 'your_model.glb' with the actual path)
+  const loader = new THREE.GLTFLoader();  // You'll need to include the GLTFLoader
+  loader.load( 'your_model.glb', function ( gltf ) {
+    const model = gltf.scene;
+    scene.add( model );
+
+    // Optional: Add some lighting
+    const light = new THREE.AmbientLight( 0x404040 ); // Soft white light
+    scene.add( light );
+    const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+    scene.add( directionalLight );
+    // Position the light (example)
+    directionalLight.position.set(1, 1, 1).normalize();
+
+    // Position the camera (adjust as needed)
+    camera.position.z = 5; // Example: 5 units away from the model
+
+    // Animation Loop
+    function animate() {
+      requestAnimationFrame( animate );
+      // Optional: Add model animation or camera movement here
+      // model.rotation.y += 0.01; // Example: Rotate the model
+
+      renderer.render( scene, camera );
+    }
+
+    animate();
+  }, function ( xhr ) {
+    console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' ); // Show loading progress
+  }, function ( error ) {
+    console.error( error ); // Handle errors
+  } );
+
+
+
+  // Handle window resizing
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+</script>
+</body>
+</html>
