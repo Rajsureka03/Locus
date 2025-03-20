@@ -55,13 +55,13 @@
 
      <!-- ===============================================-->
      <!--    Navbar-->
-     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll" background-color = "FFDB99">
        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/nmi/vrbackground.jpg" height="40" alt="logo" /></a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-             <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#details">Details</a></li>
-             <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#team">Team</a></li>
+             <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#details" color="black">Details</a></li>
+             <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#team" color="black">Team</a></li>
              <!-- Probably don't need a button in the navbar, but here's one if you do <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">Sign Up</a></li> -->
              <li class="nav-item dropdown px-3 px-xl-4"> <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Assignments</a>
                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem;" aria-labelledby="navbarDropdown">
@@ -85,7 +85,6 @@
 
      <section style="padding-top: 7rem;">
        <!--This div contains the swoopy bit in the background of the hero unit.-->
-       <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);">
        </div>
       
        <div class="container">
@@ -123,50 +122,56 @@
      <!-- ============================================-->
      <!-- Project Details============================-->
      <section class="pt-5 pt-md-9" id="details">
+      <div class="container">
+        <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
+          <img src="assets/img/nmi/vrbackground.jpg" style="max-width: 200px" alt="service" />
+        </div>
+        <div class="mb-7 text-center">
+          <h5 class="text-secondary">Project Overview</h5>
+          <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Project Details</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4">
+                <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
+                <h4 class="mb-3">Project Summary</h4>
+                <p class="mb-0 fw-medium">This Apple Vision Pro application leverages generative AI and virtual reality to help you learn the words and grammar through simulated conversations using the Apple Vision Pro and OpenAI and other APIs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4">
+                <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
+                <h4 class="mb-3">Exploratory Research</h4>
+                <p class="mb-0 fw-medium">There are few competitor products in the market currently. The closest app that compares to our work would be DuoLingo. However, DuoLingo and the other language learning applications focus strictly on vocabulary and grammar memorization and not on the speaking component of learning a language. Since there are so few applications in the AI and VR space, there are truly so few competitors in this space. Here is the research document that we came up with </p>
+                  <a href="https://drive.google.com/drive/folders/1-5px-UdqvQvHq_ptZwF5SvJjUhFie0FY?dmr=1&ec=wgc-drive-hero-goto" target="_blank">Research Document</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4">
+                <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
+                <h4 class="mb-3">Brand Kit</h4>
+                <a href="https://docs.google.com/presentation/d/1WTkkU9P9KxYea_dTldDSowdKZNyQUghu444mwKtRnjM/edit#slide=id.g33812315922_2_5" target="_blank">This is the document that we used to create our brand kit. Click here to view the total brand kit. View Brand Kit here</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4">
+                <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
+                <h4 class="mb-3">UX Map</h4>
+                <p class="mb-0 fw-medium">This is the graphic for our UX Map. As we have iterated and modified our project, so has our UX Map as well. <a href="https://www.canva.com/design/DAGc3UKGLcQ/MZ">UX Map</a></p>
 
-
-       <div class="container">
-         <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="assets/img/nmi/vrbackground.jpg" style="max-width: 200px" alt="service" /></div>
-         <div class="mb-7 text-center">
-           <h5 class="text-secondary">Project Overview</h5>
-           <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Project Details</h3>
-         </div>
-         <div class="row">
-           <div class="col-lg-3 col-sm-6 mb-6">
-             <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-               <div class="card-body p-xxl-5 p-4"> <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
-                 <h4 class="mb-3">Project Summary</h4>
-                 <p class="mb-0 fw-medium">This Apple Vision Pro application will leverage generative AI and virtual reality to help you learn the words and grammar of the objects around you using the Apple Vision Pro's object recognition and the Open AI API.</p>
-               </div>
-             </div>
-           </div>
-           <div class="col-lg-3 col-sm-6 mb-6">
-             <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-               <div class="card-body p-xxl-5 p-4"> <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
-                 <h4 class="mb-3">Exploratory Research</h4>
-                 <p class="mb-0 fw-medium">There are few competitor products in the market currently. The closest or app that compares to our work would be DuoLingo. However, DuoLingo and the other language learning applications focus strictly on vocabulary and grammar memorization and not on the speaking component of learning a language.</p>
-               </div>
-             </div>
-           </div>
-           <div class="col-lg-3 col-sm-6 mb-6">
-             <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-               <div class="card-body p-xxl-5 p-4"> <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
-                 <h4 class="mb-3">UX Map</h4>
-                 <p class="mb-0 fw-medium">This is the graphic for our UX Map. As we have iterated and modified our project, so has our UX Map as well.</p>
-               </div>
-             </div>
-           </div>
-           <div class="col-lg-3 col-sm-6 mb-6">
-             <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-               <div class="card-body p-xxl-5 p-4"> <img src="assets/img/nmi/vrbackground.jpg" width="75" alt="Service" />
-                 <h4 class="mb-3">Final Deliverable</h4>
-                 <p class="mb-0 fw-medium">Here is the final deliverable for our project. View the project by clicking the link here.</p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div><!-- end of .container-->
-
+              </div>  
+              </div>
+              </div>
+              </div>
+              </div>             
 
      </section>
      <!-- End of Project Details============================-->
@@ -186,7 +191,7 @@
          </div>
          <div class="row">
            <div class="col-md-4 mb-4">
-             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/team1.jpg" alt="Team Member Name" />
+             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/team1.jpg" alt="John Weatherford" />
                <div class="card-body py-4 px-3">
                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
                    <h4 class="text-secondary fw-bold"></h4>
@@ -196,7 +201,7 @@
              </div>
            </div>
            <div class="col-md-4 mb-4">
-             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/team2.jpg" alt="Team Member Name" />
+             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/Banibe.jpg" alt="Team Member Name" />
                <div class="card-body py-4 px-3">
                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
                    <h4 class="text-secondary fw-bold">Banibe Ebegbodi
@@ -207,7 +212,7 @@
              </div>
            </div>
            <div class="col-md-4 mb-4">
-             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/team3.jpg" alt="Team Member Name" />
+             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/Raj.jpg" alt="Team Member Name" />
                <div class="card-body py-4 px-3">
                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
                    <h4 class="text-secondary fw-bold">Raj Sureka</h4>
@@ -219,7 +224,7 @@
          </div>
          <div class="row">
            <div class="col-md-4 mb-4">
-             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/team1.jpg" alt="Team Member Name" />
+             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/Wesley.jpeg" alt="Team Member Name" />
                <div class="card-body py-4 px-3">
                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
                    <h4 class="text-secondary fw-bold">Wesley Morgan</h4>
@@ -229,7 +234,7 @@
              </div>
            </div>
            <div class="col-md-4 mb-4">
-             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/team2.jpg" alt="Team Member Name" />
+             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/Kati.jpg" alt="Team Member Name" />
                <div class="card-body py-4 px-3">
                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
                    <h4 class="text-secondary fw-bold">Kati Putman</h4>
@@ -239,7 +244,7 @@
              </div>
            </div>
            <div class="col-md-4 mb-4">
-             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/team3.jpg" alt="Team Member Name" />
+             <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/team/Maggie.jpg" alt="Team Member Name" />
                <div class="card-body py-4 px-3">
                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
                    <h4 class="text-secondary fw-bold">Maggie Foster</h4>
@@ -257,72 +262,59 @@
      <!-- ============================================-->
 
 
-<!-- Checkpoint One begin ============================-->
-<section class="pt-5" id="checkpoint-one">
-
-
- <div class="container">
-   <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"><img src="assets/img/dest/shape.svg" alt="destination" /></div>
-   <div class="mb-7 text-center">
-     <h5 class="text-secondary">Assignments </h5>
-     <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Checkpoint One</h3>
-   </div>
-   <div class="row">
-     <div class="col-md-4 mb-4">
-       <a href="assets/files/checkpoint-one/exploratory-research.pdf" target="_blank" class="text-decoration-none">
-       <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/projects/project-placeholder.png" alt="Project Placeholder Image" />
-         <div class="card-body py-4 px-3">
-           <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-             <h4 class="text-secondary fw-medium">Exploratory Research</h4>
-           </div>
-           <span class="fs-0 fw-medium">For our exploratory research, we looked at user needs, pain points, and gathered initial insights to guide the design process.</span>
-         </div>
-       </div>
-     </a>
-     </div>
-     <div class="col-md-4 mb-4">
-       <a href="assets/files/checkpoint-one/project-plan.pdf" target="_blank" class="text-decoration-none">
-       <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/projects/project-placeholder.png" alt="Project Placeholder Image" />
-         <div class="card-body py-4 px-3">
-           <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-             <h4 class="text-secondary fw-medium">Project Plan</h4>
-           </div>
-           <span class="fs-0 fw-medium">This document outlines the key goals, deliverables, timeline, and resources required to successfully complete the project.</span>
-         </div>
-       </div>
-     </a>
-     </div>
-     <div class="col-md-4 mb-4">
-       <a href="assets/files/checkpoint-one/prfaq.pdf" target="_blank" class="text-decoration-none">
-       <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/projects/project-placeholder.png" alt="Project Placeholder Image" />
-         <div class="card-body py-4 px-3">
-           <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-             <h4 class="text-secondary fw-medium">PR / FAQ</h4>
-           </div>
-           <span class="fs-0 fw-medium">This document includes a public relations strategy and a set of frequently asked questions to clarify project goals and address potential concerns.</span>
-         </div>
-       </div>
-     </a>
-     </div>
-   </div>
- </div><!-- end of .container-->
- <div class="col-md-4 mb-4">
-   <a href="assets/files/checkpoint-one/prfaq.pdf" target="_blank" class="text-decoration-none">
-   <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/projects/project-placeholder.png" alt="Project Placeholder Image" />
-     <div class="card-body py-4 px-3">
-       <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-         <h4 class="text-secondary fw-medium">User Research</h4>
-       </div>
-       <span class="fs-0 fw-medium">This document includes a public relations strategy and a set of frequently asked questions to clarify project goals and address potential concerns.</span>
-     </div>
-   </div>
- </a>
- </div>
-</div>
-</div><!-- end of .container-->
-
-
-</section>
+     <section class="pt-5" id="checkpoint-one">
+      <div class="container">
+        <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
+          <img src="assets/img/dest/shape.svg" alt="destination" />
+        </div>
+        <div class="mb-7 text-center">
+          <h5 class="text-secondary">Assignments</h5>
+          <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Checkpoint One</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <a href="assets/files/checkpoint-one/exploratory-research.pdf" target="_blank" class="text-decoration-none">
+              <div class="card overflow-hidden shadow">
+                <img class="card-img-top" src="assets/img/projects/project-placeholder.png" alt="Project Placeholder Image" />
+                <div class="card-body py-4 px-3">
+                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                    <h4 class="text-secondary fw-medium">Exploratory Research</h4>
+                  </div>
+                  <span class="fs-0 fw-medium">For our exploratory research, we looked at user needs, pain points, and gathered initial insights to guide the design process.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="assets/files/checkpoint-one/project-plan.pdf" target="_blank" class="text-decoration-none">
+              <div class="card overflow-hidden shadow">
+                <img class="card-img-top" src="assets/img/projects/project-placeholder.png" alt="Project Placeholder Image" />
+                <div class="card-body py-4 px-3">
+                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                    <h4 class="text-secondary fw-medium">Project Plan</h4>
+                  </div>
+                  <span class="fs-0 fw-medium">This document outlines the key goals, deliverables, timeline, and resources required to successfully complete the project.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="assets/files/checkpoint-one/prfaq.pdf" target="_blank" class="text-decoration-none">
+              <div class="card overflow-hidden shadow">
+                <img class="card-img-top" src="assets/img/projects/project-placeholder.png" alt="Project Placeholder Image" />
+                <div class="card-body py-4 px-3">
+                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                    <h4 class="text-secondary fw-medium">PR / FAQ</h4>
+                  </div>
+                  <span class="fs-0 fw-medium">This document includes a public relations strategy and a set of frequently asked questions to clarify project goals and address potential concerns.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+     </section>
+     
 <!-- Checkpoint One end ============================-->
 <!-- ============================================-->
 
