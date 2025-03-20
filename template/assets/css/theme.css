@@ -7237,6 +7237,26 @@ fieldset:disabled .btn {
   }
 }
 
+.color-box {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.color-box span {
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+
 .accordion-button:not(.collapsed) {
   color: #212832;
   background-color: #FCFCFC;
