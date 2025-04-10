@@ -63,8 +63,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #142f52;
-  background-color: #FFDB99;
+  color: #f3eeeb;
+  background-color: #142f52;
+  background-image: 
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -122,6 +123,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.25156rem + 0.01875vw);
+  font-family: "Charter";
 }
 
 @media (min-width: 1200px) {
@@ -132,6 +134,10 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.125rem;
+  font-family: "DIN Condensed", sans-serif;
+}
+.highlight-color {
+  
 }
 
 h6, .h6 {
@@ -141,6 +147,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: "DIN Alternate", sans-serif;
 }
 
 abbr[title],
@@ -1357,7 +1364,7 @@ progress {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    width: 33.33333%;
+    width: 50%;
   }
   .col-md-5 {
     -webkit-box-flex: 0;
@@ -8668,6 +8675,7 @@ fieldset:disabled .btn {
 
 .mb-0 {
   margin-bottom: 0 !important;
+  font-family: "DIN Alternate";
 }
 
 .mb-1 {
@@ -8693,6 +8701,16 @@ fieldset:disabled .btn {
 .mb-6 {
   margin-bottom: 3rem !important;
 }
+
+.flex-container {
+  display: flex;
+  position: relative;
+  align-items: stretch; 
+}
+.flex-child {
+  display: flex;
+}
+
 
 .mb-7 {
   margin-bottom: 4rem !important;
@@ -9360,6 +9378,11 @@ fieldset:disabled .btn {
   padding-top: 7.5rem !important;
 }
 
+#details a {
+    color: #142f52;
+    text-decoration: underline;
+}
+
 .pt-10 {
   padding-top: 10rem !important;
 }
@@ -9626,6 +9649,7 @@ fieldset:disabled .btn {
 
 .fw-medium {
   font-weight: 500 !important;
+  color: black;
 }
 
 .fw-semi-bold {
@@ -9740,7 +9764,7 @@ fieldset:disabled .btn {
 }
 
 .text-secondary {
-  color: #5E6282 !important;
+  color: white !important;
 }
 
 .text-success {
