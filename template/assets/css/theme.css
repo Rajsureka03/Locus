@@ -9777,6 +9777,9 @@ fieldset:disabled .btn {
 .text-secondary {
   color: white !important;
 }
+h4.text-secondary {
+  color: black !important;
+}
 
 .text-success {
   color: #79B93C !important;
