@@ -1,3 +1,26 @@
 .fs-0 fw-medium {
     font-family: "DIN Alternate", sans-serif;
 }
+
+@font-face {
+    font-family: "Charter-Bold";
+    src: url(fonts/charter/charter/ttf/Charter\ Bold.ttf);
+}
+
+.charter-title {
+    font-family: "Charter-Bold";
+    color:#FFDB99;
+    font-size: 70px;
+}
+
+.sea-bg {
+    background-color: #8cb3e4;
+    border-radius: 2rem;
+  }
+
+  .title-line {
+    width: 70%;
+    border-color: #FFDB99;
+    margin: 0 auto;
+  }
+  
