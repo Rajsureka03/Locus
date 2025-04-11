@@ -5184,10 +5184,6 @@ fieldset:disabled .btn {
   color: var(--brand-primary);
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
-
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: var(--brand-primary);
 }
@@ -7492,6 +7488,21 @@ fieldset:disabled .btn {
   z-index: 1030;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #FFDB99;
+}
+.navbar-light.padding-transition .navbar-nav .nav-link {
+  color: #142f52;
+}
+
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 .fixed-bottom {
   position: fixed;
   right: 0;
